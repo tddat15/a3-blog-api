@@ -1,4 +1,14 @@
-{"files.exclude": {
+{
+  "saveAndRunExt": {
+    "commands": [
+      {
+        "match": "\\.(css$|js$|html$)",
+        "isShellCommand": false,
+        "cmd": "workbench.action.debug.restart"
+      }
+    ]
+  },
+  "files.exclude": {
   "node_modules/": true,
   "bin": true,
   "dist": true,
@@ -8,5 +18,10 @@
   ".dev": true,
   ".ebextensions": true,
   ".elasticbeanstalk": true
-}
+  },
+  "cSpell.words": [
+    "Percies",
+    "typeorm"
+  ],
+
 }
