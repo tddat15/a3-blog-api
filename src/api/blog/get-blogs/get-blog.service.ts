@@ -1,12 +1,12 @@
 import { Blog } from 'src/entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class GetBlogService {
   constructor(
-    @Inject('BLOG_REPOSITORY')
+    // @Inject('BLOG_REPOSITORY')
     @InjectRepository(Blog)
     private readonly blogRepo: Repository<Blog>,
   ) {}

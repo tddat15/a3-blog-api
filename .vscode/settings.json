@@ -19,6 +19,7 @@
   ".ebextensions": true,
   ".elasticbeanstalk": true
   },
+  "files.eol": "\r\n",
   "cSpell.words": [
     "Percies",
     "typeorm"

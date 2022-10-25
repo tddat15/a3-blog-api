@@ -3,14 +3,14 @@ import { ApiTags } from '@nestjs/swagger';
 import { Blog } from 'src/entity';
 import { GetBlogService } from './get-blog.service';
 
-@ApiTags('BLog')
+@ApiTags('Blog')
 @Controller('/blog')
 export class GetBlogController {
-  constructor(private readonly blogService: GetBlogService) {
-    this.blogService;
+  constructor(private readonly getBlogService: GetBlogService) {
+    this.getBlogService;
   }
   @Get('/')
   public async getBlogs(): Promise<Blog[]> {
-    return await this.blogService.getBlogs();
+    return await this.getBlogService.getBlogs();
   }
 }

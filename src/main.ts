@@ -6,6 +6,7 @@ import { AppModule } from './app.module';
 import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 import { middleware } from './app.middleware';
 import { json, urlencoded } from 'express';
+import './common/extensions/typeorm.extension';
 
 async function bootstrap() {
   const isProduction = process.env.NODE_ENV === 'production';
